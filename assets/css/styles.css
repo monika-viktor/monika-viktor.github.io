@@ -1,0 +1,15 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+.hero {
+  background: url("hero.jpg") center/cover no-repeat;
+  min-height: 40vh;
+}
+
+/* Utility tweaks */
+.lang-btn.active,
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* Feel free to extend with your own palette */
