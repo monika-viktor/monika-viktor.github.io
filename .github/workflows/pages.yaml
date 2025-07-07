@@ -1,0 +1,29 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches: [main]           # or any branch you like
+  workflow_dispatch:
+
+permissions:
+  contents: read               # checkout
+  pages: write                 # upload to Pages
+  id-token: write              # OIDC auth
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages       # don’t rename this
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'            # everything in the repo
+      - id: deployment
+        uses: actions/deploy-pages@v4
