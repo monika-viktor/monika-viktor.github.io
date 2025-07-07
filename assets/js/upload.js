@@ -11,7 +11,7 @@
  * Done!  The static site will now POST images directly to Google Drive.
  */
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbwpbzhEF70RZ1LhDkQu8PAKinRPrRvhEJ1s7oY7OshHYpvQfkZPl70bylwmOp_JsV7w/exec"; // ← replace
+const scriptURL = "https://script.google.com/macros/s/AKfycbyLLenawFR6bnnk7pXdCf6S_0hA0aOqzp9FaWVnI2g7Ktb96Tqwjl5p3eCsJ6I9CQTB/exec"; // ← your live Apps Script URL
 
 const uploadForm = document.getElementById("uploadForm");
 const photoInput = document.getElementById("photoFiles");
@@ -26,7 +26,7 @@ uploadForm.addEventListener("submit", async (e) => {
     return;
   }
 
-  statusEl.textContent = i18next.t("uploading"); // add key in your locale JSON
+  statusEl.textContent = i18next.t("uploading");
   const data = new FormData();
   [...files].forEach((f) => data.append("files[]", f, f.name));
 
