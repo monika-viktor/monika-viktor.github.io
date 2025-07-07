@@ -11,7 +11,7 @@
  * Done!  The static site will now POST images directly to Google Drive.
  */
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbxP8bsI39a29J49NVPQ-msP_p3_RRvMx_112asd4-ItZvvHINQ_wnqZnGA9t7zuHFem/exec"; // ← your live Apps Script URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbzQMAwzIm-mfWDMS54HZymAhKvhw1XAMhDx0jPVpr6PeLG2ZbCdSocjP8Nt3IX_04ZP/exec"; // ← your live Apps Script URL
 
 const uploadForm = document.getElementById("uploadForm");
 const photoInput = document.getElementById("photoFiles");
