@@ -11,7 +11,7 @@
  * Done!  The static site will now POST images directly to Google Drive.
  */
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbxuAEv6Xpxsh4yT1TDWAQIElCUWlwdbp7pvEWg-XddmtNXfYMe8ygeJMZBzpGBDfahN/exec"; // ← your live Apps Script URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbxP8bsI39a29J49NVPQ-msP_p3_RRvMx_112asd4-ItZvvHINQ_wnqZnGA9t7zuHFem/exec"; // ← your live Apps Script URL
 
 const uploadForm = document.getElementById("uploadForm");
 const photoInput = document.getElementById("photoFiles");
@@ -32,9 +32,16 @@ uploadForm.addEventListener("submit", async (e) => {
 
   try {
     const res = await fetch(scriptURL, { method: "POST", body: data });
-    statusEl.textContent = await res.text();
-    photoInput.value = ""; // reset picker
+    
+    // Add response logging:
+    console.log("Status:", res.status);
+    const responseText = await res.text();
+    console.log("Response:", responseText);
+    
+    statusEl.textContent = responseText;
+    photoInput.value = "";
   } catch (err) {
+    console.error("Upload failed:", err);
     statusEl.textContent = i18next.t("uploadFailed");
   }
 });
