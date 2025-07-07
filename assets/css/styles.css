@@ -13,3 +13,59 @@ body {
 }
 
 /* Feel free to extend with your own palette */
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  
+  /* Central vertical line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #dee2e6;
+    transform: translateX(-50%);
+  }
+  
+  /* Each item */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Left-side items */
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+    padding-right: 2rem;
+  }
+  
+  /* Right-side items */
+  .timeline-item.right {
+    left: 50%;
+    padding-left: 2rem;
+  }
+  
+  /* The content bubble */
+  .timeline-item .timeline-content {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  
+  /* Time label */
+  .timeline-item .time {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
