@@ -10,7 +10,7 @@ const resources = {
           "Welcome to our wedding site. We're thrilled to celebrate with you.",
         detailsTitle: "Ceremony & Reception",
         detailsBody:
-          "Join us at St. Mary's Church at 15:00 on 5 September 2025, followed by dinner at The Grand Hall.",
+          "Join us at St. Anthony of Padua Church at 17:00 on 23 August 2025, the celebration will continue at Zagroda Lesna banquett hall.",
         uploadTitle: "Upload your favourite shots",
         chooseFiles: "Select images",
         uploadBtn: "Upload",
@@ -26,7 +26,7 @@ const resources = {
           "Witamy na naszej stronie ślubnej. Cieszymy się, że będziesz z nami świętować.",
         detailsTitle: "Ceremonia i przyjęcie",
         detailsBody:
-          "Dołącz do nas w Kościele św. Marii o 15:00 5 września 2025, a następnie kolacja w The Grand Hall.",
+          "Dołącz do nas w Kościele św. Antoniego z Padwy o 17:00 23 sierpnia 2025, a następnie świętowanie będzie kontynuowane w sali bankietowej Zagroda Leśna.",
         uploadTitle: "Prześlij swoje ulubione ujęcia",
         chooseFiles: "Wybierz zdjęcia",
         uploadBtn: "Wyślij",
@@ -42,7 +42,7 @@ const resources = {
           "Ласкаво просимо на наш весільний сайт. Ми раді святкувати з вами.",
         detailsTitle: "Церемонія та банкет",
         detailsBody:
-          "Приєднуйтесь до нас у церкві Св. Марії о 15:00 5 вересня 2025, після чого вечеря в The Grand Hall.",
+          "Приєднуйтесь до нас у церкві Святого Антонія Падуанського о 17:00 23 серпня 2025 року, святкування продовжиться в банкетній залі Zagroda Lesna.",
         uploadTitle: "Завантажте свої найкращі фото",
         chooseFiles: "Виберіть зображення",
         uploadBtn: "Завантажити",
