@@ -1,71 +1,169 @@
-body {
-  font-family: system-ui, sans-serif;
-}
-.hero {
-  background: url("hero.jpg") center/cover no-repeat;
-  min-height: 40vh;
+/*  Font import  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
+/* ─── Headline fonts ─────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Halima+Sofira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+
+/* Default “Wedding schedule” headline */
+h2[data-i18n="scheduleTitle"] {
+  font-family: 'Halima Sofira', serif;
 }
 
-/* Utility tweaks */
+/* Override for Ukrainian */
+html[lang="uk"] h2[data-i18n="scheduleTitle"] {
+  font-family: 'Cormorant Unicase', serif;
+}
+
+/*  TYPOGRAPHY  */
+body {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  letter-spacing: .3px;
+}
+
+/*  NAV + tabs  */
 .lang-btn.active,
 .nav-link.active {
   font-weight: 600;
 }
 
-/* Feel free to extend with your own palette */
-/* Timeline container */
+/*  INFO BUTTON  – neutral grey instead of bright blue  */
+.info-btn {
+  font-size: .75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #6c757d;          /* grey-600 */
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .5rem;
+  cursor: pointer;
+  font-weight: bold;
+  vertical-align: middle;
+  transition: transform .2s ease, background-color .2s ease;
+}
+.info-btn:hover   { background: #5a6268; transform: scale(1.1); }
+.info-btn:focus   { box-shadow: 0 0 0 2px rgba(108,117,125,.25); }
+
+/* ─────────────────────────── TIMELINE ─────────────────────────── */
+
+/* container with the central spine */
 .timeline {
-    position: relative;
-    margin: 2rem 0;
-    padding: 0;
-  }
-  
-  /* Central vertical line */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 4px;
-    background: #dee2e6;
-    transform: translateX(-50%);
-  }
-  
-  /* Each item */
-  .timeline-item {
-    position: relative;
-    width: 50%;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
-  /* Left-side items */
-  .timeline-item.left {
-    left: 0;
-    text-align: right;
-    padding-right: 2rem;
-  }
-  
-  /* Right-side items */
-  .timeline-item.right {
-    left: 50%;
-    padding-left: 2rem;
-  }
-  
-  /* The content bubble */
-  .timeline-item .timeline-content {
-    display: inline-block;
-    background: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    padding: 1rem;
-  }
-  
-  /* Time label */
-  .timeline-item .time {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-  
+  position: relative;
+  margin: 2.5rem 0;
+  padding: 0;
+  text-align: center;                  /* center date separators */
+}
+.timeline::before {                    /* vertical spine */
+  content: '';
+  position: absolute;
+  inset: 0 0 0 50%;                    /* top:0; right:0; bottom:0; left:50% */
+  width: 2px;
+  background: #ced4da;
+  transform: translateX(-50%);
+  z-index: 0;                          /* behind items */
+}
+
+/* date separator styling (masks the spine behind) */
+.timeline-date {
+  position: relative;
+  display: block;                      /* allow margin auto centering */
+  width: fit-content;                  /* shrink to content */
+  background-color: #fff;
+  padding: 0 10px;
+  z-index: 2;
+  margin: 1rem auto;                   /* centered block */
+}
+
+/* every event card */
+.timeline-item {
+  position: relative;
+  width: 50%;                          /* half width */
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 0;    /* baseline; overridden by JS spacings */
+  z-index: 1;                          /* above spine */
+}
+.timeline-item.left  { left: 0;  text-align: right; padding-right: 2rem; }
+.timeline-item.right { left: 50%; text-align: left;  padding-left: 2rem; }
+
+/* dot on the spine */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;                      /* middle of item */
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #6c757d;
+  border-radius: 50%;
+}
+.timeline-item.left::before  { right: -5px; }
+.timeline-item.right::before { left:  -5px; }
+
+/* card contents */
+.timeline-item .timeline-content {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.timeline-item .time  { font-weight: 600; }
+.timeline-item .label { opacity: .85;  }
+
+
+
+/* ───── responsive: single-column for small screens ───── */
+@media (max-width: 768px) {
+  .timeline::before       { left: 8px; transform: none; }  /* move spine to the left */
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right    { width: 100%; left: 0; text-align: left; padding: 1rem 0 1rem 3rem; }
+  .timeline-item::before  { left: 0; right: auto; }
+}
+/* MENU styling: centered list container, left-aligned items with numbered bullets */
+.menu-list {
+  counter-reset: menu-counter;
+  margin: 0 auto;
+  max-width: 600px;           /* adjust as needed */
+  text-align: left;
+}
+.menu-list li {
+  position: relative;
+  list-style: none;
+  counter-increment: menu-counter;
+  padding: 0.75rem 0 0.75rem 3rem; /* space for bullet */
+}
+.menu-list li::before {
+  content: counter(menu-counter);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #6c757d;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+
+/*  UPLOAD SECTION  – untouched, included for completeness  */
+.hero {
+  background: url("hero.jpg") center/cover no-repeat;
+  min-height: 40vh;
+}
+
+/* ─── Larger dots in logo date ─────────────────────────────────────── */
+.logo-dot {
+  font-size: 2em;
+  vertical-align: middle;
+}
