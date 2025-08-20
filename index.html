@@ -20,7 +20,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#">
-           M ♥ V&nbsp; | 23 <span class="logo-dot">&centerdot;</span> 08 <span class="logo-dot">&centerdot;</span> 2025
+           M <span class="heart">♥</span> V&nbsp; | 23 <span class="logo-dot">&centerdot;</span> 08 <span class="logo-dot">&centerdot;</span> 2025
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -38,112 +38,64 @@
                     data-bs-target="#menu" role="tab" aria-controls="menu"
                     aria-selected="false" data-i18n="tabMenu"></button>
           </li>
+          <!-- Bus Schedule tab removed -->
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="tabUpload" data-bs-toggle="tab"
                     data-bs-target="#upload" role="tab" aria-controls="upload"
                     aria-selected="false" data-i18n="tabUpload"></button>
           </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tabBusSchedule" data-bs-toggle="tab"
-                    data-bs-target="#busSchedule" role="tab" aria-controls="busSchedule"
-                    aria-selected="false" data-i18n="tabBusSchedule"></button>
-          </li>
         </ul>
-
-        <!-- language switch -->
+         <!-- language switch -->
         <div class="btn-group" role="group" aria-label="Language switch">
           <button type="button" class="btn btn-outline-secondary lang-btn active" data-lang="en">EN</button>
           <button type="button" class="btn btn-outline-secondary lang-btn" data-lang="pl">PL</button>
           <button type="button" class="btn btn-outline-secondary lang-btn" data-lang="uk">UA</button>
         </div>
+      
       </div>
     </div>
   </nav>
+
+  
+<div id="userInfo" class="ms-3 text-muted small"></div>
 
   <!-- CONTENT -->
   <main class="tab-content flex-grow-1 container py-4">
 
     <!-- ───── Schedule TAB ───── -->
     <div class="tab-pane fade show active" id="schedule" role="tabpanel" aria-labelledby="tabSchedule">
-      <h2 class="mb-5 text-center" data-i18n="scheduleTitle"></h2>
+        <h2 class="mb-5 text-center" data-i18n="scheduleTitle"></h2>
 
-      <div class="timeline">
-        <div class="timeline-date text-center fw-bold mb-4">23.08.2025</div>
+        <div class="timeline">
+          <div class="timeline-date text-center fw-bold mb-4">23.08.2025</div>
 
-        <div class="timeline-item left" data-index="0">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
+          <!-- 23.08.2025 -->
+            <div class="timeline-item left" data-index="0"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="1"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="2"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="3"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="4"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="5"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="6"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="7"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="8"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="9"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="10"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="11"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="12"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+
+            <div class="timeline-date text-center fw-bold my-4">24.08.2025</div>
+
+            <!-- 24.08.2025 -->
+            <div class="timeline-item right" data-index="13"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="14"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="15"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="16"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="17"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item left" data-index="18"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="19"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
+            <div class="timeline-item right" data-index="20"><div class="timeline-content"><span class="time"></span><span class="label"></span><button class="info-btn d-none" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click">i</button></div></div>
         </div>
-
-        <div class="timeline-item right" data-index="1">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-item left" data-index="2">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-item right" data-index="3">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-item left" data-index="4">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-item right" data-index="5">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-date text-center fw-bold my-4">24.08.2025</div>
-
-        <div class="timeline-item left" data-index="6">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-
-        <div class="timeline-item right" data-index="7">
-          <div class="timeline-content">
-            <span class="time"></span>
-            <span class="label"></span>
-            <button class="info-btn d-none" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-trigger="click">i</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- ───── Menu TAB ───── -->
@@ -154,70 +106,17 @@
 
     <!-- ───── Upload TAB ───── -->
     <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="tabUpload">
-      <h2 data-i18n="uploadTitle"></h2>
-      <form id="uploadForm">
-        <div class="mb-3">
-          <label for="photoFiles" class="form-label" data-i18n="chooseFiles"></label>
-          <input class="form-control" type="file" id="photoFiles" name="files[]" accept="image/*" multiple />
-        </div>
-        <button class="btn btn-primary" type="submit" data-i18n="uploadBtn"></button>
-      </form>
-      <div id="uploadStatus" class="mt-3"></div>
+      <h2 class="text-center mb-4" data-i18n="uploadTitle"></h2>
+
+      <div class="text-center mt-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7Gxlk8bP_RXdsOFtNEu7i6E6n6pXBF2wtT-osPHBk21cL3A/viewform?usp=sharing&ouid=112300397350006970307" 
+           target="_blank" 
+           class="btn btn-secondary btn-lg" 
+           data-i18n="Go to Google Form">
+          Upload Your Wedding Photos
+        </a>
+      </div>
     </div>
-
-    <!-- ───── Bus Schedule TAB ───── -->
-<div class="tab-pane fade" id="busSchedule" role="tabpanel" aria-labelledby="tabBusSchedule">
-  <h2 class="text-center mb-4" data-i18n="busScheduleTitle"></h2>
-  <table class="table">
-    <tbody>
-      <!-- Day 1 -->
-      <tr class="table-date">
-        <td class="fw-bold text-center">23.08.2025</td>
-      </tr>
-      <tr>
-        <td><span class="time">08:00</span> — <span data-i18n="bs.0.0"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">09:00</span> — <span data-i18n="bs.1.0"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">11:00</span> — <span data-i18n="bs.2.0"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">13:00</span> — <span data-i18n="bs.3.0"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">15:00</span> — <span data-i18n="bs.4.0"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">17:00</span> — <span data-i18n="bs.5.0"></span></td>
-      </tr>
-
-      <!-- Day 2 -->
-      <tr class="table-date">
-        <td class="fw-bold text-center">24.08.2025</td>
-      </tr>
-      <tr>
-        <td><span class="time">08:00</span> — <span data-i18n="bs.0.1"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">09:00</span> — <span data-i18n="bs.1.1"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">11:00</span> — <span data-i18n="bs.2.1"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">13:00</span> — <span data-i18n="bs.3.1"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">15:00</span> — <span data-i18n="bs.4.1"></span></td>
-      </tr>
-      <tr>
-        <td><span class="time">17:00</span> — <span data-i18n="bs.5.1"></span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
   </main>
 

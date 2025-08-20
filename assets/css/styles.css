@@ -28,6 +28,88 @@ body {
   font-weight: 600;
 }
 
+/* ─── MODERN NAV MENU ─────────────────────────────── */
+.navbar {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  margin: 1rem auto;
+  max-width: 960px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333 !important;
+}
+.heart {
+  color: #333 !important;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-item {
+  margin: 0 0.25rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 999px;
+  background-color: transparent;
+  padding: 0.5rem 1.2rem;
+  color: #555;
+  font-size: 0.95rem;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+}
+
+.nav-tabs .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #6c757d;
+  transition: width 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover::after {
+  width: 80%;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #6c757d;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.nav-tabs .nav-link.active::after {
+  display: none;
+}
+
+/* ─── Language buttons ─── */
+.lang-btn {
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  background-color: #6c757d;
+  color: #fff;
+  font-weight: 600;
+}
+
+
 /*  INFO BUTTON  – neutral grey instead of bright blue  */
 .info-btn {
   font-size: .75rem;
@@ -117,43 +199,47 @@ body {
 
 
 /* ───── responsive: single-column for small screens ───── */
+/* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
-  .timeline::before       { left: 8px; transform: none; }  /* move spine to the left */
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right    { width: 100%; left: 0; text-align: left; padding: 1rem 0 1rem 3rem; }
-  .timeline-item::before  { left: 0; right: auto; }
-}
-/* MENU styling: centered list container, left-aligned items with numbered bullets */
-.menu-list {
-  counter-reset: menu-counter;
-  margin: 0 auto;
-  max-width: 600px;           /* adjust as needed */
-  text-align: left;
-}
-.menu-list li {
-  position: relative;
-  list-style: none;
-  counter-increment: menu-counter;
-  padding: 0.75rem 0 0.75rem 3rem; /* space for bullet */
-}
-.menu-list li::before {
-  content: counter(menu-counter);
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #6c757d;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-}
+  .timeline::before {
+    inset: 0 0 0 1.5rem;
+    transform: none;
+  }
 
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 3rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 3rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .timeline-item::before {
+    left: 1.25rem;
+    right: auto;
+  }
+
+  .timeline-date {
+    margin-left: 1.5rem;
+  }
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: 1.25rem !important;
+    right: auto   !important;
+  }
+}
+.timeline-item .time {
+  margin-right: 1ch;  /* or try 0.75rem */
+}
 
 
 /*  UPLOAD SECTION  – untouched, included for completeness  */
@@ -166,4 +252,32 @@ body {
 .logo-dot {
   font-size: 2em;
   vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+  .navbar .nav-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-tabs .nav-link {
+    text-align: left;
+    width: auto; /* optional: prevents forced full width */
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    flex: 1;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
 }
