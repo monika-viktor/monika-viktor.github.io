@@ -32,81 +32,61 @@ i18next.init(
         'schedule.1.label': 'Wishes',
         'schedule.1.info':  'Guests offer good wishes (Życzenia) to the couple outside the church, right after everyone exits.',
 
-        'schedule.2.time':  '18:45',
+        'schedule.2.time':  '18:30',
         'schedule.2.label': 'Transfer to venue',
         'schedule.2.info':  'Guests head to the reception venue.',
 
-        'schedule.3.time':  '19:00',
+        'schedule.3.time':  '18:45',
         'schedule.3.label': 'Welcome with bread & salt · Toast',
         'schedule.3.info':  'A Polish tradition at the venue entrance: the couple is greeted with bread and salt — a symbol of hospitality and prosperity — followed by a welcome toast.',
 
-        'schedule.4.time':  '19:15',
-        'schedule.4.label': 'Entry into reception hall',
-        'schedule.4.info':  'Guests take their seats as the newlyweds enter.',
+        'schedule.4.time':  '19:00',
+        'schedule.4.label': '1st Course',
+        'schedule.4.info':  'The first of several delicious Polish-style meals.',
 
-        'schedule.5.time':  '19:30',
-        'schedule.5.label': '1st Course',
-        'schedule.5.info':  'The first of several delicious Polish-style meals.',
+        'schedule.5.time':  '20:15',
+        'schedule.5.label': 'First Dance',
+        'schedule.5.info':  'The couple’s first dance together.',
 
-        'schedule.6.time':  '20:15',
-        'schedule.6.label': 'First Dance',
-        'schedule.6.info':  'The couple’s first dance together.',
+        'schedule.6.time':  '21:30',
+        'schedule.6.label': '2nd Course',
+        'schedule.6.info':  'Another round of food to refuel for more dancing.',
 
-        'schedule.7.time':  '20:25',
-        'schedule.7.label': 'First Dance Set',
-        'schedule.7.info':  'The band opens the dance floor — join the newlyweds for an upbeat first set.',
+        'schedule.7.time':  '22:00',
+        'schedule.7.label': 'Outdoor Sparklers',
+        'schedule.7.info': 'Outdoor photo with sparklers: take a lighter and one or two sparklers and wait for the signal — photographers will arrange everyone.',
 
-        'schedule.8.time':  '21:00',
-        'schedule.8.label': '2nd Course',
-        'schedule.8.info':  'Another round of food to refuel for more dancing.',
+        'schedule.8.time':  '22:25',
+        'schedule.8.label': 'Thank You to Parents',
+        'schedule.8.info': 'A heartfelt moment — we’ll say a few words and thank our parents.',
 
-        'schedule.9.time':  '21:30',
-        'schedule.9.label': 'Second Dance Set',
-        'schedule.9.info':  'More fun on the dance floor.',
+        'schedule.9.time':  '22:30',
+        'schedule.9.label': 'Wedding Cake',
+        'schedule.9.info': 'Ceremonial cutting of the wedding cake with the newlyweds; after photos the cake will be served.',
 
-        'schedule.10.time': '22:00',
-        'schedule.10.label': 'Outdoor Sparklers',
-        'schedule.10.info': 'Outdoor photo with sparklers: take a lighter and one or two sparklers and wait for the signal — photographers will arrange everyone.',
+        'schedule.10.time': '23:15',
+        'schedule.10.label': '3rd Course',
+        'schedule.10.info': 'Late evening food.',
 
-        'schedule.11.time': '22:30',
-        'schedule.11.label': '3rd Course',
-        'schedule.11.info': 'Late evening food.',
+        'schedule.11.time': '00:00',
+        'schedule.11.label': 'Oczepiny',
+        'schedule.11.info': 'A Polish tradition marking the transition to married life. The bride holds a bouquet with ribbons; unmarried women each hold a ribbon. The bride cuts the ribbons one by one — the last uncut ribbon decides who gets married next. The groom will throw his bow tie. A short, fun dance contest follows — grab a partner and join!',
 
-        'schedule.12.time': '23:00',
-        'schedule.12.label': 'Thank You to Parents',
-        'schedule.12.info': 'A heartfelt moment — we’ll say a few words and thank our parents.',
+        'schedule.12.time': '01:00',
+        'schedule.12.label': '4th Course',
+        'schedule.12.info': 'Night meal for the persistent dancers.',
 
-        'schedule.13.time': '23:15',
-        'schedule.13.label': 'Dance Set',
-        'schedule.13.info': 'Open floor dancing continues.',
+        'schedule.13.time': '03:00',
+        'schedule.13.label': '5th Course',
+        'schedule.13.info': 'Final snack before winding down.',
 
-        'schedule.14.time': '23:30',
-        'schedule.14.label': 'Wedding Cake',
-        'schedule.14.info': 'Ceremonial cutting of the wedding cake with the newlyweds; after photos the cake will be served.',
+        'schedule.14.time': '04:00',
+        'schedule.14.label': 'End of the Celebration',
+        'schedule.14.info': 'Formal close of the wedding night.',
 
-        'schedule.15.time': '00:00',
-        'schedule.15.label': 'Oczepiny',
-        'schedule.15.info': 'A Polish tradition marking the transition to married life. The bride holds a bouquet with ribbons; unmarried women each hold a ribbon. The bride cuts the ribbons one by one — the last uncut ribbon decides who gets married next. The groom will throw his bow tie. A short, fun dance contest follows — grab a partner and join!',
-
-        'schedule.16.time': '00:30',
-        'schedule.16.label': 'Dance Set',
-        'schedule.16.info': 'Party continues into the night.',
-
-        'schedule.17.time': '02:00',
-        'schedule.17.label': '4th Course',
-        'schedule.17.info': 'Night meal for the persistent dancers.',
-
-        'schedule.18.time': '03:00',
-        'schedule.18.label': '5th Course',
-        'schedule.18.info': 'Final snack before winding down.',
-
-        'schedule.19.time': '04:00',
-        'schedule.19.label': 'End of the Celebration',
-        'schedule.19.info': 'Formal close of the wedding night.',
-
-        'schedule.20.time': '12:30',
-        'schedule.20.label': 'Poprawiny',
-        'schedule.20.info': 'Traditional second-day afterparty — relaxed, joyful, and full of food and music.',
+        'schedule.15.time': '12:30',
+        'schedule.15.label': 'Poprawiny',
+        'schedule.15.info': 'Traditional second-day afterparty — relaxed, joyful, and full of food and music.',
 
         /* MENU */
         menuTitle: 'Wedding Menu',
@@ -160,81 +140,62 @@ i18next.init(
         'schedule.1.label': 'Życzenia',
         'schedule.1.info': 'Goście składają życzenia Młodej Parze przed kościołem, zaraz po wyjściu z kościoła.',
 
-        'schedule.2.time': '18:45',
+        'schedule.2.time': '18:30',
         'schedule.2.label': 'Dojazd na salę',
         'schedule.2.info': 'Goście udają się na salę weselną.',
 
-        'schedule.3.time': '19:00',
+        'schedule.3.time': '18:45',
         'schedule.3.label': 'Przywitanie chlebem i solą · Toast',
         'schedule.3.info': 'Polska tradycja przy wejściu do sali: Para Młoda witana jest chlebem i solą — na gościnność i dostatek — po czym nastąpi toast powitalny.',
 
-        'schedule.4.time': '19:15',
-        'schedule.4.label': 'Wejście na salę i zajęcie miejsc',
-        'schedule.4.info': 'Goście zajmują miejsca, Para Młoda wchodzi.',
+        'schedule.4.time': '19:00',
+        'schedule.4.label': '1. Danie',
+        'schedule.4.info': 'Pierwsze z kilku smacznych dań.',
 
-        'schedule.5.time': '19:30',
-        'schedule.5.label': '1. Danie',
-        'schedule.5.info': 'Pierwsze z kilku smacznych dań.',
+        'schedule.5.time': '20:15',
+        'schedule.5.label': 'Pierwszy taniec',
+        'schedule.5.info': 'Pierwszy taniec Pary Młodej.',
 
-        'schedule.6.time': '20:15',
-        'schedule.6.label': 'Pierwszy taniec',
-        'schedule.6.info': 'Pierwszy taniec Pary Młodej.',
+        'schedule.6.time': '21:30',
+        'schedule.6.label': '2. Danie',
+        'schedule.6.info': 'Kolejne danie.',
 
-        'schedule.7.time': '20:25',
-        'schedule.7.label': 'Pierwszy set taneczny',
-        'schedule.7.info': 'Zespół/DJ otwiera parkiet — dołączcie do Pary Młodej na pierwszy, energetyczny set.',
+        'schedule.7.time': '22:00',
+        'schedule.7.label': 'Zimne ognie',
+        'schedule.7.info': 'Zdjęcie na zewnątrz z zimnymi ogniami: weź zapalniczkę i 1–2 zimne ognie, czekaj na sygnał; fotografowie ustawią gości.',
 
-        'schedule.8.time': '21:00',
-        'schedule.8.label': '2. Danie',
-        'schedule.8.info': 'Kolejne danie.',
+        'schedule.8.time': '22:25',
+        'schedule.8.label': 'Podziękowania dla rodziców',
+        'schedule.8.info': 'Powiemy kilka słów i podziękujemy naszym rodzicom.',
 
-        'schedule.9.time': '21:30',
-        'schedule.9.label': 'Drugi set taneczny',
-        'schedule.9.info': 'Czas na więcej tańca.',
+        'schedule.9.time': '22:30',
+        'schedule.9.label': 'Tort weselny',
+        'schedule.9.info': 'Ceremonialne krojenie tortu z Parą Młodą; po zdjęciach tort zostanie podany.',
 
-        'schedule.10.time': '22:00',
-        'schedule.10.label': 'Zimne ognie',
-        'schedule.10.info': 'Zdjęcie na zewnątrz z zimnymi ogniami: weź zapalniczkę i 1–2 zimne ognie, czekaj na sygnał; fotografowie ustawią gości.',
+        'schedule.10.time': '23:15',
+        'schedule.10.label': '3. Danie',
+        'schedule.10.info': 'Kolacja dla głodnych gości.',
 
-        'schedule.11.time': '22:30',
-        'schedule.11.label': '3. Danie',
-        'schedule.11.info': 'Kolacja dla głodnych gości.',
+        'schedule.11.time': '00:00',
+        'schedule.11.label': 'Oczepiny',
+        'schedule.11.info': 'Polska tradycja symbolizująca wejście w życie małżeńskie: Panna Młoda trzyma bukiet z wstążkami, niezamężne kobiety chwytają wstążki; Panna Młoda przecina je po kolei — ostatnia nieprzecięta wstążka wskaże kolejną przyszłą Pannę Młodą. Pan Młody rzuci muchę. Po części tradycyjnej krótki, zabawny konkurs taneczny.',
 
-        'schedule.12.time': '23:00',
-        'schedule.12.label': 'Podziękowania dla rodziców',
-        'schedule.12.info': 'Powiemy kilka słów i podziękujemy naszym rodzicom.',
+        'schedule.12.time': '01:00',
+        'schedule.12.label': '4. Danie',
+        'schedule.12.info': 'Nocna przekąska.',
 
-        'schedule.13.time': '23:15',
-        'schedule.13.label': 'Set taneczny',
-        'schedule.13.info': 'Zabawa trwa dalej.',
+        'schedule.13.time': '03:00',
+        'schedule.13.label': '5. Danie',
+        'schedule.13.info': 'Ostatni posiłek nocy.',
 
-        'schedule.14.time': '23:30',
-        'schedule.14.label': 'Tort weselny',
-        'schedule.14.info': 'Ceremonialne krojenie tortu z Parą Młodą; po zdjęciach tort zostanie podany.',
+        'schedule.14.time': '04:00',
+        'schedule.14.label': 'Koniec imprezy',
+        'schedule.14.info': 'Zakończenie weselnej nocy.',
 
-        'schedule.15.time': '00:00',
-        'schedule.15.label': 'Oczepiny',
-        'schedule.15.info': 'Polska tradycja symbolizująca wejście w życie małżeńskie: Panna Młoda trzyma bukiet z wstążkami, niezamężne kobiety chwytają wstążki; Panna Młoda przecina je po kolei — ostatnia nieprzecięta wstążka wskaże kolejną przyszłą Pannę Młodą. Pan Młody rzuci muchę. Po części tradycyjnej krótki, zabawny konkurs taneczny — złap partnera i baw się z nami.',
+        'schedule.15.time': '12:30',
+        'schedule.15.label': 'Poprawiny',
+        'schedule.15.info': 'Tradycyjny drugi dzień wesela — luźna atmosfera, dużo jedzenia i muzyki.',
 
-        'schedule.16.time': '00:30',
-        'schedule.16.label': 'Set taneczny',
-        'schedule.16.info': 'Zabawa do rana.',
-
-        'schedule.17.time': '02:00',
-        'schedule.17.label': '4. Danie',
-        'schedule.17.info': 'Nocna przekąska.',
-
-        'schedule.18.time': '03:00',
-        'schedule.18.label': '5. Danie',
-        'schedule.18.info': 'Ostatni posiłek nocy.',
-
-        'schedule.19.time': '04:00',
-        'schedule.19.label': 'Koniec imprezy',
-        'schedule.19.info': 'Zakończenie weselnej nocy.',
-
-        'schedule.20.time': '12:30',
-        'schedule.20.label': 'Poprawiny',
-        'schedule.20.info': 'Tradycyjny drugi dzień wesela — luźna atmosfera, dużo jedzenia i muzyki.',
 
 
         menuTitle: 'Menu weselne',
@@ -285,83 +246,64 @@ i18next.init(
 
         'schedule.1.time': '17:50',
         'schedule.1.label': 'Побажання',
-        'schedule.1.info': 'Гості вітають молодят просто неба біля церкви, одразу після виходу з храму.',
+        'schedule.1.info': 'Гості вітають молодят біля церкви, одразу після виходу з храму.',
 
-        'schedule.2.time': '18:45',
+        'schedule.2.time': '18:30',
         'schedule.2.label': 'Переїзд до зали',
         'schedule.2.info': 'Гості вирушають до місця прийому.',
 
-        'schedule.3.time': '19:00',
+        'schedule.3.time': '18:45',
         'schedule.3.label': 'Хліб і сіль · Тост',
         'schedule.3.info': 'Польська традиція біля входу до зали: молодят вітають хлібом і сіллю — на гостинність і достаток. Далі — вітальний тост.',
 
-        'schedule.4.time': '19:15',
-        'schedule.4.label': 'Вхід до зали',
-        'schedule.4.info': 'Гості займають місця, молодята заходять.',
+        'schedule.4.time': '19:00',
+        'schedule.4.label': '1-а страва',
+        'schedule.4.info': 'Смачний початок вечері.',
 
-        'schedule.5.time': '19:30',
-        'schedule.5.label': '1-а страва',
-        'schedule.5.info': 'Смачний початок вечері.',
+        'schedule.5.time': '20:15',
+        'schedule.5.label': 'Перший танець',
+        'schedule.5.info': 'Перший танець пари.',
 
-        'schedule.6.time': '20:15',
-        'schedule.6.label': 'Перший танець',
-        'schedule.6.info': 'Перший танець пари.',
+        'schedule.6.time': '21:30',
+        'schedule.6.label': '2-а страва',
+        'schedule.6.info': 'Наступна частина вечері.',
 
-        'schedule.7.time': '20:25',
-        'schedule.7.label': 'Перший танцювальний сет',
-        'schedule.7.info': 'Гурт/діджей відкриває танцпол — приєднуйтеся до першого енергійного сету.',
+        'schedule.7.time': '22:00',
+        'schedule.7.label': 'Бенгальські вогні',
+        'schedule.7.info': 'Фото на вулиці з бенгальськими вогнями: візьміть запальничку та 1–2 вогники і чекайте сигналу; фотографи розставлять гостей.',
 
-        'schedule.8.time': '21:00',
-        'schedule.8.label': '2-а страва',
-        'schedule.8.info': 'Наступна частина вечері.',
+        'schedule.8.time': '22:25',
+        'schedule.8.label': 'Подяка батькам',
+        'schedule.8.info': 'Скажемо кілька слів і подякуємо нашим батькам.',
 
-        'schedule.9.time': '21:30',
-        'schedule.9.label': 'Другий танцювальний сет',
-        'schedule.9.info': 'Продовження танців.',
+        'schedule.9.time': '22:30',
+        'schedule.9.label': 'Весільний торт',
+        'schedule.9.info': 'Урочисте розрізання весільного торта разом із молодятами; після фото торт подадуть.',
 
-        'schedule.10.time': '22:00',
-        'schedule.10.label': 'Бенгальські вогні',
-        'schedule.10.info': 'Фото на вулиці з бенгальськими вогнями: візьміть запальничку та 1–2 вогники і чекайте сигналу; фотографи розставлять гостей.',
+        'schedule.10.time': '23:15',
+        'schedule.10.label': '3-я страва',
+        'schedule.10.info': 'Вечеря пізно ввечері.',
 
-        'schedule.11.time': '22:30',
-        'schedule.11.label': '3-я страва',
-        'schedule.11.info': 'Вечеря пізно ввечері.',
+        'schedule.11.time': '00:00',
+        'schedule.11.label': 'Очепини',
+        'schedule.11.info': 'Польський обряд переходу до подружнього життя: Наречена тримає букет із стрічками, незаміжні жінки тримають стрічки; наречена відрізає їх по одній — остання не відрізана стрічка визначить наступну наречену. Наречений кине метелика. Далі — короткий веселий танцювальний конкурс.',
 
-        'schedule.12.time': '23:00',
-        'schedule.12.label': 'Подяка батькам',
-        'schedule.12.info': 'Скажемо кілька слів і подякуємо нашим батькам.',
+        'schedule.12.time': '01:00',
+        'schedule.12.label': '4-а страва',
+        'schedule.12.info': 'Нічна страва.',
 
-        'schedule.13.time': '23:15',
-        'schedule.13.label': 'Танцювальний сет',
-        'schedule.13.info': 'Вечірка триває.',
+        'schedule.13.time': '03:00',
+        'schedule.13.label': '5-а страва',
+        'schedule.13.info': 'Останній перекус.',
 
-        'schedule.14.time': '23:30',
-        'schedule.14.label': 'Весільний торт',
-        'schedule.14.info': 'Урочисте розрізання весільного торта разом із молодятами; після фото торт подадуть.',
+        'schedule.14.time': '04:00',
+        'schedule.14.label': 'Кінець святкування',
+        'schedule.14.info': 'Кінець весільної ночі.',
 
-        'schedule.15.time': '00:00',
-        'schedule.15.label': 'Очепини',
-        'schedule.15.info': 'Польський обряд переходу до подружнього життя: Наречена тримає букет із стрічками, незаміжні жінки тримають стрічки; наречена відрізає їх по одній — остання не відрізана стрічка визначить наступну наречену. Наречений кине свого "метелика" (краватку-метелик). Після цього — короткий веселий танцювальний конкурс, тож ловіть партнера!',
+        'schedule.15.time': '12:30',
+        'schedule.15.label': 'Поправини',
+        'schedule.15.info': 'Другий день святкування — невимушена атмосфера, багато їжі та музики.',
 
-        'schedule.16.time': '00:30',
-        'schedule.16.label': 'Танцювальний сет',
-        'schedule.16.info': 'Продовження вечірки.',
-
-        'schedule.17.time': '02:00',
-        'schedule.17.label': '4-а страва',
-        'schedule.17.info': 'Нічна страва.',
-
-        'schedule.18.time': '03:00',
-        'schedule.18.label': '5-а страва',
-        'schedule.18.info': 'Останній перекус.',
-
-        'schedule.19.time': '04:00',
-        'schedule.19.label': 'Кінець святкування',
-        'schedule.19.info': 'Кінець весільної ночі.',
-
-        'schedule.20.time': '12:30',
-        'schedule.20.label': 'Поправини',
-        'schedule.20.info': 'Другий день святкування — невимушена атмосфера, багато їжі та музики.',
 
 
         menuTitle: 'Весільне меню',
@@ -504,27 +446,39 @@ function applyDynamicSpacing() {
   const items = Array.from(document.querySelectorAll('.timeline-item'));
   if (!items.length) return;
 
-  const firstTime = items[0].querySelector('.time').textContent.trim().replace(/[^\d:]/g, '');
-  const firstHour = parseInt(firstTime.split(':')[0], 10);
+  const parseHM = (txt) => {
+    const clean = txt.trim().replace(/[^\d:]/g, ''); // strips "≈", etc., keeps hh:mm
+    let [h, m] = clean.split(':').map(n => parseInt(n, 10));
+    // Normalize rare "24:00" to midnight of next day
+    if (h === 24 && m === 0) { h = 0; m = 0; return { h, m, is24: true }; }
+    return { h, m, is24: false };
+  };
 
-  const events = items.map(item => {
-    const timeStr = item.querySelector('.time').textContent.trim().replace(/[^\d:]/g, '');
-    let [h, m] = timeStr.split(':').map(s => parseInt(s, 10));
-    if (h === 24) h = 24;
-    if (h < firstHour) h += 24;
-    const dt = new Date();
-    dt.setHours(h, m, 0, 0);
-    return { item, datetime: dt };
-  });
+  let dayOffset = 0;       // how many midnights passed
+  let prevAbsMin = null;   // absolute minutes from start (monotonic)
 
-  events.forEach((ev, idx) => {
-    if (idx === 0) {
-      ev.item.style.marginTop = '0px';
-    } else {
-      const prev = events[idx - 1];
-      const hoursDiff = (ev.datetime - prev.datetime) / (1000 * 60 * 60);
-      ev.item.style.marginTop = `${hoursDiff * SPACING_PER_HOUR}px`;
+  items.forEach((item, idx) => {
+    const { h, m, is24 } = parseHM(item.querySelector('.time').textContent);
+    const curMin = h * 60 + m;
+
+    // If clock wrapped (e.g., 23:30 -> 00:00), bump to next day.
+    // Also treat explicit "24:00" as the next day’s 00:00.
+    if (idx > 0) {
+      const prevTOD = prevAbsMin % 1440;
+      if (is24 || curMin < prevTOD) dayOffset += 1;
+    } else if (is24) {
+      dayOffset = 1;
     }
+
+    const absMin = curMin + dayOffset * 1440;
+    const gapHours = idx === 0 ? 0 : (absMin - prevAbsMin) / 60;
+
+    item.style.marginTop = idx === 0 ? '0px' : `${gapHours * SPACING_PER_HOUR}px`;
+
+    // Optional: expose day index for styling/separators
+    item.dataset.dayIndex = String(dayOffset);
+
+    prevAbsMin = absMin;
   });
 }
 
